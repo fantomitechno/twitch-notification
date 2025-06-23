@@ -81,4 +81,4 @@ setInterval(() => {
       check(streamer);
     }
   }
-}, 60000);
+}, 30000);
