@@ -29,7 +29,7 @@ const main = async () => {
         const channel = await client.createDM(process.env.DISCORD_USER_ID!);
         const msg = await client.sendMessage(
           channel.id,
-          `${stream.user_name} is now in live for ${stream.viewer_count} on \`${stream.title}\` (${stream.game_name})`
+          `[${stream.user_name}](https://twitch.tv/${stream.user_name}) is now in live for ${stream.viewer_count} on \`${stream.title}\` (${stream.game_name})`
         );
         lastStart[streamer.id] = stream.started_at;
         lastMessage[streamer.id] = msg;
