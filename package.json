@@ -1,0 +1,25 @@
+{
+  "name": "twitch-notification",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && npm run run",
+    "run": "node ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.12.1",
+  "dependencies": {
+    "@prisma/client": "^6.10.1",
+    "dotenv": "^16.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.3",
+    "discord-api-types": "^0.38.13",
+    "prisma": "^6.10.1",
+    "typescript": "^5.8.3"
+  }
+}
